@@ -37,7 +37,7 @@ const experiences = [
     title: 'Strategy Analyst',
     company: 'Manawa Energy',
     period: 'December 2021 - March 2023',
-    logo: '/manawa.jpeg',
+    logo: '/Manawa.jpeg',
     description: [
       'Developed and optimized price paths in the New Zealand Energy Market, providing key insights for strategic energy hedging that contributed to reduced exposure to price volatility and informed decisions for generation development.',
       'Influenced and shaped company-wide strategic goals, contributing to organizational success.',
@@ -78,7 +78,7 @@ const experiences = [
     title: 'Chief Technology Officer / Co-Founder',
     company: 'One Earth Technology / Special Studios',
     period: 'November 2018 - June 2023',
-    logo: '/specialstudiologoblack.webp',
+    logo: '/SpecialStudioLogoBlack.webp',
     description: [
       'Conducting research of over 800 peer-reviewed papers for a feasibility study.',
       'Creating a business strategic plan, marketing plan, and technical feasibility report on 3D printing houses.',

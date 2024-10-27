@@ -13,9 +13,7 @@ export default function About() {
       <Card className="p-6">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="text-muted-foreground">
-          Data Scientist and Machine Learning Engineer with 4+ years of experience in developing and implementing data-driven solutions. 
-          Expertise in Python, TensorFlow, and SQL with a strong foundation in statistical analysis and machine learning. 
-          Passionate about solving complex problems and creating impactful solutions through data science and AI.
+        Im a Strategy Analyst with expertise in data modeling, forecasting, and visualization, dedicated to transforming data into strategic insights. My work has spanned retail and energy sectors, where I've enhanced sales prediction accuracy for large-scale loyalty programs at Mecca and optimized energy price strategies at Manawa Energy. Skilled in Python, SQL, and machine learning, I excel in building automation solutions that streamline reporting processes
         </p>
       </Card>
     </motion.div>
