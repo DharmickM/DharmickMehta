@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row">
       {/* Left Column - Fixed Sidebar */}
-      <div className="w-full lg:w-1/3 lg:fixed lg:left-0 lg:top-14 lg:h-[calc(100vh-3.5rem)] p-8 bg-background border-r overflow-y-auto">
+      <div className="w-full lg:w-1/3 lg:fixed lg:left-0 lg:top-14 lg:h-[calc(100vh-3.5rem)] p-8 bg-background  overflow-y-auto">
         <div className="space-y-8">
           {/* Profile Image Container */}
-          <div className="w-full h-auto object-cover">
+          <div className="w-72 h-72  mx-auto">
             <img
-              src="/dharmhighdef.webp"
+              src="/dharmhighdefcirc.png"
               alt="David"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover rounded-full"
               loading="eager"
               decoding="async"
             />

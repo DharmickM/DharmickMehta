@@ -19,15 +19,15 @@ const Header = () => {
   if (!mounted) return null
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
   {/* Full-width container for the header */}
   <div className="flex h-14 items-center w-full px-4">
     {/* Full-width div for the left content (logo and navigation links) */}
     <div className="flex flex-1 items-center space-x-4">
       <a className="mr-6 flex items-center space-x-2" href="/">
-        <span className="font-bold sm:inline-block">Dharmick Mehta</span>
+        <span className="font-bold sm:inline-block text-4xl">Dharmick Mehta</span>
       </a>
-      <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+      <nav className="hidden md:flex items-center space-x-6 text-xl font-semibold">
         <a className="transition-colors hover:text-foreground/80" href="#about">About</a>
         <a className="transition-colors hover:text-foreground/80" href="#skills">Skills</a>
         <a className="transition-colors hover:text-foreground/80" href="#projects">Projects</a>
