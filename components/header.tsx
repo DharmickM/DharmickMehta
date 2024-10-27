@@ -36,7 +36,7 @@ const Header = () => {
     </div>
     {/* Right content with theme toggle and mobile menu */}
     <div className="flex items-center space-x-2">
-    {<a className="transition-colors hover:text-foreground/80" href="https://localhost:3000/projects">Projects</a>}
+    {<a className="transition-colors hover:text-foreground/80" href="/projects">Projects</a>}
       <Button
         variant="ghost"
         size="icon"
