@@ -4,32 +4,32 @@ import { Badge } from '@/components/ui/badge';
 import Hero from '@/components/hero';
 import About from '@/components/about';
 import Experience from '@/components/experience';
+import Skills from '@/components/skills';
+import Projects from '@/components/projects';
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row">
-      {/* Left Column - Fixed Sidebar */}
-      <div className="w-full lg:w-1/3 lg:fixed lg:left-0 lg:top-14 lg:h-[calc(100vh-3.5rem)] p-8 bg-background  overflow-y-auto">
-        <div className="space-y-8">
-          {/* Profile Image Container */}
-          <div className="w-72 h-72  mx-auto">
-            <img
-              src="/dharmhighdefcirc.png"
-              alt="David"
-              className="w-full h-full object-cover rounded-full"
-              loading="eager"
-              decoding="async"
-            />
+    <main className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <Hero />
+
+      <div className="container mx-auto px-4 lg:px-8 bg-grid-white/[0.02] bg-grid-pattern">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          {/* Left Column - About */}
+          <div className="lg:col-span-4 space-y-8">
+            <div className="sticky top-20">
+              <About />
+            </div>
           </div>
-          {/* About Section */}
-          <About />
+
+          {/* Right Column - Experience, Projects & Skills */}
+          <div className="lg:col-span-8 space-y-16 margin-0">
+            <Experience />
+            <Projects />
+            <Skills />
+          </div>
         </div>
       </div>
-
-      {/* Right Column - Scrollable Content */}
-      <div className="w-full lg:w-2/3 lg:ml-[33.333333%]">
-        <Experience />
-      </div>
-    </div>
+    </main>
   );
 }

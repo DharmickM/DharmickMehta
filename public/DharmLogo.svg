@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404.94 772.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e9dbb5;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        fill: #e9dbb5;
+        font-family: MinionVariableConcept-Roman, 'Minion Variable Concept';
+        font-size: 401.81px;
+        font-variation-settings: 'wght' 400, 'opsz' 11;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="17.11" y1="771.95" x2="17.11" y2="772.95"/>
+  <text class="cls-2" transform="translate(78.92 332.63)"><tspan x="0" y="0">D</tspan></text>
+  <ellipse class="cls-1" cx="202.47" cy="197.03" rx="199.47" ry="194.03"/>
+  <line class="cls-1" x1="23.11" y1="114.95" x2="23.11" y2="281.95"/>
+  <line class="cls-1" x1="41.11" y1="82.95" x2="41.11" y2="310.95"/>
+  <line class="cls-1" x1="61.11" y1="61.95" x2="61.11" y2="335.95"/>
+  <line class="cls-1" x1="80.1  1" y1="43.95" x2="80.11" y2="349.95"/>
+</svg>

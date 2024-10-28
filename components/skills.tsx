@@ -38,7 +38,7 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="space-y-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function Skills() {
           className="space-y-8"
         >
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Skills & Expertise</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.category}
