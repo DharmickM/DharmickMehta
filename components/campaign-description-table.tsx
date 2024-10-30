@@ -11,10 +11,15 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
+interface Campaign {
+  id?: number | string
+  [key: string]: any
+}
+
 export default function CampaignDescriptionTable() {
-  const [campaigns, setCampaigns] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [campaigns, setCampaigns] = useState<Campaign[]>([])
+  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     async function fetchCampaigns() {
@@ -25,9 +30,9 @@ export default function CampaignDescriptionTable() {
           throw error
         }
         
-        setCampaigns(data)
+        setCampaigns(data as Campaign[])
       } catch (error) {
-        setError(error.message)
+        setError((error as Error).message)
       } finally {
         setIsLoading(false)
       }
