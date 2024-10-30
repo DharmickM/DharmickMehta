@@ -26,9 +26,9 @@ const Header = () => {
         
           <nav className="hidden md:flex items-center space-x-6 text-xl font-semibold">
             
-            <a className="transition-colors hover:text-foreground/80" href="#about">About</a>
-            <a className="transition-colors hover:text-foreground/80" href="#projects">Projects</a>
-            <a className="transition-colors hover:text-foreground/80" href="#skills">Skills</a>
+            <a className="transition-colors hover:text-foreground/80" href="/#about">About</a>
+            <a className="transition-colors hover:text-foreground/80" href="/#projects">Projects</a>
+            <a className="transition-colors hover:text-foreground/80" href="/#skills">Skills</a>
           </nav>
         </div>
         <div className="flex items-center space-x-4">
