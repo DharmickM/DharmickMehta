@@ -122,7 +122,7 @@ export default function Experience() {
     <div className={`p-0   space-y-8 ${inter.className}`}>
      
       <div className="space-y-6">
-        <h2 className="text-3xl font-bold tracking-tight">Work Experience</h2>
+        
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
