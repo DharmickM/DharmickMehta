@@ -9,17 +9,17 @@ import { ExternalLink, Github } from "lucide-react"
 const projects = [
   {
     title: "Forecasting Model",
-    description: "Advanced time series forecasting model built with Python and TensorFlow, deployed as a web application.",
+    description: "Advanced time series forecasting model built with Python, used for strategic decision making.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    tags: ["Python", "TensorFlow", "React", "Next.js"],
+    tags: ["Python", "SARIMAX", "AWS SageMaker", "Linear Algebra"],
     demo: "#",
     github: "#"
   },
   {
-    title: "E-commerce Dashboard",
+    title: "Customer Reporting",
     description: "Real-time dashboard for tracking sales, inventory, and customer analytics.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    tags: ["React", "TypeScript", "Recharts", "Tailwind"],
+    tags: ["PowerBI","Tableau","Matplotlib","Advanced SQL"],
     demo: "#",
     github: "#"
   },
@@ -35,8 +35,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-muted/50">
-      <div className="container px-4 md:px-6">
+    <section id="projects" className="py-10 bg-muted/50 rounded-sm">
+      <div className="container px-4 md:px-6  ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Featured Projects</h2>
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Resume Summary</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
               <motion.div
@@ -72,7 +72,7 @@ export default function Projects() {
                         </Badge>
                       ))}
                     </div>
-                    <div className="flex space-x-2">
+                    {/* <div className="flex space-x-2">
                       <Button variant="outline" size="sm" asChild>
                         <a href={project.demo} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="h-4 w-4 mr-2" />
@@ -85,7 +85,7 @@ export default function Projects() {
                           Code
                         </a>
                       </Button>
-                    </div>
+                    </div> */}
                   </CardContent>
                 </Card>
               </motion.div>

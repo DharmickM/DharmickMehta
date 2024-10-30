@@ -120,8 +120,9 @@ const experiences = [
 export default function Experience() {
   return (
     <div className={`p-8 space-y-8 ${inter.className}`}>
-      <h2 className="text-3xl font-bold tracking-tight">Work Experience</h2>
+     
       <div className="space-y-6">
+      
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -130,6 +131,7 @@ export default function Experience() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
           >
+            <h2 className="text-3xl font-bold tracking-tight">Work Experience</h2>
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <div className="space-y-4">
                 <div className="flex justify-between items-start">
