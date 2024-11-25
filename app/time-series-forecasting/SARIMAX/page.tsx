@@ -54,7 +54,7 @@ export default function SARIMAXPage() {
         </Card>
         
       </div>
-      <iframe src="/RevisedIncrementalityModel-SARIMAX.html" width="100%" height="1000" frameBorder="0"></iframe>
+      <iframe src="/RevisedIncrementalityModel-SARIMAX" width="100%" height="1000" frameBorder="0"></iframe>
     </div>
       
    
