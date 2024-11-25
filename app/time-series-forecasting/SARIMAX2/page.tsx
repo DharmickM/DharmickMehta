@@ -14,7 +14,12 @@ export default function SARIMAXPage() {
             Advanced time series analysis using SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous factors)
           </p>
         </div>
-       
+        <Button asChild>
+          <Link href="/SARIMAX.ipynb" download>
+            <Download className="mr-2 h-4 w-4" />
+            Download Notebook
+          </Link>
+        </Button>
       </div>
 
       <div className="grid gap-8">
