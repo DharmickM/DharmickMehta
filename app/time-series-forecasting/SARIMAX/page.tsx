@@ -54,7 +54,7 @@ export default function SARIMAXPage() {
         </Card>
       <div><hr className='border-3'></hr><br></br></div>
       </div>
-      <iframe src="/RossmanSARIMAX.html" width="100%" height="1000" frameBorder="0"></iframe>
+      <iframe src="/RossmanSARIMAX" width="100%" height="1000" frameBorder="0"></iframe>
 
     </div>
       
