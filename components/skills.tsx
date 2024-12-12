@@ -26,12 +26,12 @@ const skills = [
   {
     category: "Data Science",
     icon: BrainCircuit,
-    items: ["Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow"]
+    items: ["Python", "Pandas", "NumPy", "Scikit-learn", "Classification Modelling","SARIMAX","XGBoost","Linear Programming"]
   },
   {
     category: "Visualization",
     icon: LineChart,
-    items: ["D3.js", "Recharts", "Plotly", "Matplotlib", "Seaborn"]
+    items: ["PowerBI","Tableau","D3.js", "Recharts", "Plotly", "Matplotlib", "Seaborn"]
   }
 ]
 
