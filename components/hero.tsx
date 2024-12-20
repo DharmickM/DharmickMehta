@@ -36,7 +36,7 @@ export default function Hero() {
           >
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-primary/0 animate-pulse" />
             <Image
-              src="/dharmhighdefcirc.png"
+              src="/dharmhighdefcirc2.jpg"
               alt="Dharmick Mehta"
               fill
               className="object-cover rounded-full"
