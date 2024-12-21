@@ -13,9 +13,9 @@ export default function Hero() {
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
             className="flex-1 text-center lg:text-left space-y-8"
           >
             <div className="space-y-4">
@@ -31,7 +31,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 1, delay: 0.2 }}
             className="relative w-[280px] h-[280px] lg:w-[400px] lg:h-[400px]"
           >
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-primary/0 animate-pulse" />
