@@ -119,10 +119,8 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div className={`p-0   space-y-8 ${inter.className}`}>
-     
+    <div className={`p-0 space-y-8 ${inter.className}`}>
       <div className="space-y-6">
-        
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -131,8 +129,7 @@ export default function Experience() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            
-            <Card className="p-6 hover:shadow-lg transition-shadow">
+            <Card className="p-6 hover:shadow-lg transition-shadow space-y-4">
               <div className="space-y-4">
                 <div className="flex justify-between items-start">
                   <div className="flex items-center gap-3">
@@ -158,9 +155,9 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 text-heading-1">
                   {exp.skills.map((skill, i) => (
-                    <Badge key={i} variant="outline">
+                    <Badge key={i} variant="secondary">
                       {skill}
                     </Badge>
                   ))}

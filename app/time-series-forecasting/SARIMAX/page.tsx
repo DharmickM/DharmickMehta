@@ -6,30 +6,32 @@ import { NotebookViewer } from '@/components/notebook-viewer';
 
 export default function SARIMAXPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 mt-8">
       <div className="mb-8 flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold mb-2">SARIMAX Time Series Forecasting - </h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-3xl text-heading-1 mb-2">
+            SARIMAX Time Series Forecasting
+          </h1>
+          <p className="text-sub-heading">
             Advanced time series analysis using SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous factors)
           </p>
-          <p className="text-red-500 font-semibold">Please not I am still working on commenting this code</p>
+          <p className="text-red-500 font-semibold">
+            Please note I am still working on commenting this code
+          </p>
         </div>
-       
       </div>
 
       <div className="grid gap-8">
         <Card className="p-6">
           <div className="prose dark:prose-invert max-w-none">
             <h2 className="text-2xl font-semibold mb-4">Overview</h2>
-            <p>
-              This notebook demonstrates the implementation of SARIMAX modeling for time series forecasting that I used in previous work experience at <b>Mecca Brands</b>. I have used    <a href='https://www.kaggle.com/competitions/rossmann-store-sales' className="text-blue-500">Rossman Sales Data</a> to showcase the application of this model.
-              The model was used to improve sales prediction accuracy across all sales channels by over 90% and provide insights into incremental revenue generated through marketing campaigns.
+            <p className="text-lg">
+              This notebook demonstrates the implementation of SARIMAX modeling for time series forecasting that I used in previous work experience at <b>Mecca Brands</b>. I have used <a href="https://www.kaggle.com/competitions/rossmann-store-sales" className="text-blue-500">Rossman Sales Data</a> to showcase the application of this model. The model was used to improve sales prediction accuracy across all sales channels by over 90% and provide insights into incremental revenue generated through marketing campaigns.
             </p>
 
             <h3 className="text-xl font-semibold mt-6 mb-3">Key Features</h3>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Explaratory Data Analysis</li>
+              <li>Exploratory Data Analysis</li>
               <li>Seasonal decomposition of time series data</li>
               <li>Parameter optimization using grid search</li>
               <li>Integration with external factors (promotional events, holidays)</li>
@@ -38,8 +40,7 @@ export default function SARIMAXPage() {
 
             <h3 className="text-xl font-semibold mt-6 mb-3">Technical Implementation</h3>
             <p>
-              The model was implemented using auto_arima by PMDARIMA.
-              It incorporates multiple seasonal patterns and external regressors to capture complex relationships in the data.
+              The model was implemented using auto_arima by PMDARIMA. It incorporates multiple seasonal patterns and external regressors to capture complex relationships in the data.
             </p>
 
             <div className="bg-muted p-4 rounded-md mt-6">
@@ -52,12 +53,12 @@ export default function SARIMAXPage() {
             </div>
           </div>
         </Card>
-      <div><hr className='border-3'></hr><br></br></div>
+        <div>
+          <hr className="border-3" />
+          <br />
+        </div>
       </div>
-      <iframe src="/RossmanSARIMAX" width="100%" height="1000" frameBorder="0"></iframe>
-
+      <iframe src="/RossmanSARIMAX.html" width="100%" height="1000" frameBorder="0"></iframe>
     </div>
-      
-   
-  )
+  );
 }

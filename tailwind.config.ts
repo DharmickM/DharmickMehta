@@ -16,10 +16,27 @@ const config: Config = {
       },
     },
     extend: {
+      fontSize: {
+        'heading-1': ['2.488rem', {
+          lineHeight: '1.2',
+          letterSpacing: '-0.02em',
+          fontWeight: '700',
+        }],
+        'sub-heading': ['1.44rem', {
+          lineHeight: '1.4',
+          letterSpacing: '-0.01em',
+          fontWeight: '600',
+        }],
+        'paragraph': ['1rem', {
+          lineHeight: '1.6',
+          fontWeight: '400',
+        }],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        'name-acent': "hsl(45, 57%, 76%)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {

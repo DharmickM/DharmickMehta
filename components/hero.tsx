@@ -11,19 +11,19 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full bg-grid-white/[0.02] bg-grid-pattern" />
       
       <div className="container px-4 md:px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-[2rem] lg:gap-12">
           <motion.div 
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="flex-1 text-center lg:text-left space-y-8"
           >
-            <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                Hello, I'm Dharmick
+            <div className="space-y-8">
+              <h1 className="text-heading-1 font-black tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                Hello, I'm <span className="text-name-acent font-black">Dharmick</span>
               </h1>
-              <p className="mx-auto lg:mx-0 max-w-[700px] text-muted-foreground md:text-xl">
-                A <span className="font-semibold text-foreground">Strategy & Data Analyst</span> passionate about transforming complex data into actionable insights that drive business growth and innovation.
+              <p className=" mx-auto lg:mx-0 max-w-[700px] text-muted-foreground md:text-sub-heading text-medium">
+                A <span className="font-semibold text-name-acent">Strategy & Data Analyst</span> passionate about transforming complex data into actionable insights that drive business growth and innovation.
               </p>
             </div>
           </motion.div>

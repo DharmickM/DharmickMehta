@@ -35,8 +35,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-10 bg-muted/50 rounded-sm">
-      <div className="container px-4 md:px-6  ">
+    <section id="projects" className="py-10 bg-muted/50 rounded-sm space-y-8 scroll-mt-20">
+      <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Resume Summary</h2>
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
               <motion.div

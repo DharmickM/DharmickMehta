@@ -9,7 +9,7 @@ import Projects from '@/components/projects';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background ">
       {/* Hero Section */}
       <Hero />
 
@@ -17,7 +17,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column - About */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="sticky top-20">
+            <div className="sticky top-[4.5rem]">
               <About />
             </div>
           </div>

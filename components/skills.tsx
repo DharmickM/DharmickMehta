@@ -46,7 +46,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Skills & Expertise</h2>
+          <h2 className="text-sub-heading font-bold tracking-tighter md:text-4xl">Skills & Expertise</h2>
           <div className="grid gap-6 md:grid-cols-2">
             {skills.map((skill, index) => (
               <motion.div
