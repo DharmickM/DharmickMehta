@@ -16,6 +16,9 @@ const config: Config = {
       },
     },
     extend: {
+      fontSmoothing: {
+        DEFAULT: 'antialiased',
+      },
       fontSize: {
         'heading-1': ['2.488rem', {
           lineHeight: '1.2',

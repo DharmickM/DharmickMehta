@@ -1,19 +1,24 @@
-"use client"
+"use client";
 
-import { useState } from 'react'
-import { MoonIcon, SunIcon, MenuIcon, Github, Linkedin, Mail, FileText } from 'lucide-react'
-import { useTheme } from 'next-themes'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+import { useState } from "react";
 import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from '@/components/ui/sheet'
-import { motion } from 'framer-motion'
+  MoonIcon,
+  SunIcon,
+  MenuIcon,
+  Github,
+  Linkedin,
+  Mail,
+  FileText,
+} from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, theme } = useTheme();
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -22,7 +27,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-6 text-xl font-semibold">
             <motion.a
               href="/#about"
-              className="transition-colors hover:text-foreground/80 scroll-mt-20"
+              className="transition-colors hover:text-name-acent scroll-mt-20"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeIn" }}
@@ -31,7 +36,7 @@ const Header = () => {
             </motion.a>
             <motion.a
               href="/#projects"
-              className="transition-colors hover:text-foreground/80 scroll-mt-20"
+              className="transition-colors hover:text-name-acent scroll-mt-20"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeIn", delay: 0.1 }}
@@ -40,7 +45,7 @@ const Header = () => {
             </motion.a>
             <motion.a
               href="/#skills"
-              className="transition-colors hover:text-foreground/80"
+              className="transition-colors hover:text-name-acent"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeIn", delay: 0.2 }}
@@ -57,36 +62,58 @@ const Header = () => {
         >
           <div className="hidden md:flex items-center space-x-2">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/DharmickM" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/DharmickM"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-name-acent transition-colors duration-200"
+              >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
-              </a>
+              </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://www.linkedin.com/in/DharmM/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.linkedin.com/in/DharmM/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-name-acent transition-colors duration-200"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </a>
+              </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:dharmick95@gmail.com">
+              <Link
+                href="mailto:dharmick95@gmail.com"
+                className="hover:text-name-acent transition-colors duration-200"
+              >
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
-              </a>
+              </Link>
             </Button>
           </div>
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
-            {theme === 'light' ? <MoonIcon className="h-5 w-5" /> : <SunIcon className="h-5 w-5" />}
+            {theme === "light" ? (
+              <MoonIcon className="h-5 w-5" />
+            ) : (
+              <SunIcon className="h-5 w-5" />
+            )}
           </Button>
-          <Button variant="default" size="sm" className="hidden md:flex items-center gap-2" asChild>
-            <a href="/resume" target="_blank" rel="noopener noreferrer">
-              <FileText className="h-4 w-4 " />
+          <Button
+            variant="default"
+            size="sm"
+            className="hidden md:flex items-center gap-2 hover:text-name-acent transition-colors duration-200"
+            asChild
+          >
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FileText className="h-4 w-4" />
               Resume
-            </a>
+            </Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
@@ -98,7 +125,7 @@ const Header = () => {
               <nav className="flex flex-col space-y-4">
                 <motion.a
                   href="#about"
-                  className="transition-colors hover:text-foreground/80"
+                  className="transition-colors hover:text-name-acent"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, ease: "easeIn" }}
@@ -107,7 +134,7 @@ const Header = () => {
                 </motion.a>
                 <motion.a
                   href="#projects"
-                  className="transition-colors hover:text-foreground/80"
+                  className="transition-colors hover:text-name-acent"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, ease: "easeIn", delay: 0.1 }}
@@ -116,34 +143,56 @@ const Header = () => {
                 </motion.a>
                 <motion.a
                   href="#skills"
-                  className="transition-colors hover:text-foreground/80"
+                  className="transition-colors hover:text-name-acent"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, ease: "easeIn", delay: 0.2 }}
                 >
                   Skills
                 </motion.a>
-                <Button variant="default" size="sm" className="w-fit mt-2 items-center gap-2" asChild>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="w-fit mt-2 items-center gap-2"
+                  asChild
+                >
+                  <Link
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FileText className="h-4 w-4" />
                     Resume
-                  </a>
+                  </Link>
                 </Button>
                 <div className="flex space-x-2 pt-4">
                   <Button variant="ghost" size="icon" asChild>
-                    <a href="https://github.com/DharmickM" target="_blank" rel="noopener noreferrer">
+                    <Link
+                      href="https://github.com/DharmickM"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-name-acent transition-colors duration-200"
+                    >
                       <Github className="h-5 w-5" />
-                    </a>
+                    </Link>
                   </Button>
                   <Button variant="ghost" size="icon" asChild>
-                    <a href="https://www.linkedin.com/in/DharmM/" target="_blank" rel="noopener noreferrer">
+                    <Link
+                      href="https://www.linkedin.com/in/DharmM/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-name-acent transition-colors duration-200"
+                    >
                       <Linkedin className="h-5 w-5" />
-                    </a>
+                    </Link>
                   </Button>
                   <Button variant="ghost" size="icon" asChild>
-                    <a href="mailto:dharmick95@gmail.com">
+                    <Link
+                      href="mailto:dharmick95@gmail.com"
+                      className="hover:text-name-acent transition-colors duration-200"
+                    >
                       <Mail className="h-5 w-5" />
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </nav>
@@ -152,7 +201,7 @@ const Header = () => {
         </motion.div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
