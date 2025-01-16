@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
