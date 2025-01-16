@@ -110,7 +110,7 @@ const Header = () => {
             className="hidden md:flex items-center gap-2 hover:text-name-acent transition-colors duration-200"
             asChild
           >
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/resume" target="_blank" rel="noopener noreferrer">
               <FileText className="h-4 w-4" />
               Resume
             </Link>
